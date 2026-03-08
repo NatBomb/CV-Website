@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Dodałem sans-serif dla bezpieczeństwa */
+  background: #7d0c0c;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* LEFT */
+.left {
+  width: 35%;
+  color: white;
+  padding: 60px;
+  text-align: center;
+}
+
+.profile img {
+  width: 250px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  opacity: 0.8;
+  line-height: 1.4; /* Lekka poprawa czytelności podtytułu */
+}
+
+.contact {
+  margin-top: 60px;
+}
+
+/* RIGHT - Zaktualizowany */
+.right {
+  width: 65%;
+  background: #e8e8e8;
+  border-radius: 40px 0 0 40px;
+  padding: 60px 80px; /* Większy padding = więcej profesjonalizmu */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sekcja About Me - poprawa czytelności */
+.about p {
+  line-height: 1.7; /* Większa interlinia */
+  max-width: 750px; /* Ograniczenie szerokości tekstu */
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+/* Kontener na slajdy */
+.slider {
+  flex: 1;
+  position: relative;
+  margin-top: 20px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Specyficzne style dla EXPERIENCE (nowe elementy) */
+.exp-item {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.job-title {
+  font-weight: bold;
+  display: block;
+  margin: 5px 0;
+  color: #444;
+}
+
+.slide ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.slide li {
+  margin-bottom: 8px;
+}
+
+/* NAV */
+.nav {
+  background: black;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
+  margin-top: 30px; /* Odstęp od treści powyżej */
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s; /* Płynne przejście */
+}
+
+.tab.active {
+  opacity: 1;
+  border-bottom: 2px solid white;
+}
